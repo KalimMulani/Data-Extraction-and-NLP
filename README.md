@@ -17,19 +17,6 @@ This project utilizes Python libraries Beautiful Soup for web scraping and NLTK 
     ```bash
     git clone https://github.com/KalimMulani/Data-Extraction-and-NLP.git
     ```
-
-## Usage
-
-1. **Web Scraping**:
-    - Modify the `scraper.py` file to specify the URLs you want to scrape and the data you want to extract.
-    - Run the `scraper.py` file to extract data from the specified URLs.
-  
-2. **NLP**:
-    - Use NLTK functions in your Python scripts to perform various NLP tasks on the extracted data.
-  
-3. **Data Analysis**:
-    - Utilize Pandas to load, clean, and analyze the extracted data.
-  
 ## Example
 
 ```python
@@ -53,5 +40,6 @@ tokens = nltk.word_tokenize(text)
 data = {'Column1': [1, 2, 3], 'Column2': ['A', 'B', 'C']}
 df = pd.DataFrame(data)
 # Perform data analysis using Pandas
-License
+```
+##License
 This project is licensed under the MIT License.
