@@ -1,10 +1,60 @@
-As per the given objectives and instructions -
+# Data Extraction and NLP with Web Scraping
 
-1. Scraped the data from the given web links. 
-2. Stored the Scraped data into the Extracted_Data folder by names of their URL_ID respectively.
-3. Also stored the Article data from the web links to Final.csv file in CSVFiles directory.
-4. Performed NLP operations on the data in Final.csv file
-5. Performed textual analysis on the Final.csv file with Output.csv file as a output stored in CSVFiles directory.
-7. All the .py files are stored in Pyfiles directory.
-8. Created a package of Pyfiles using setup.py.
-9. Inorder to get the output just run the pipeline.py file in Pyfiles.
+This project utilizes Python libraries Beautiful Soup for web scraping and NLTK for Natural Language Processing (NLP) to extract data from web sources and perform NLP tasks. Additionally, the project incorporates the Pandas library for data manipulation and analysis.
+
+## Features
+
+- **Web Scraping**: Utilizes Beautiful Soup to extract data from HTML and XML files.
+- **NLP**: Implements NLP tasks such as tokenization, stemming, lemmatization, part-of-speech tagging, and named entity recognition (NER) using NLTK.
+- **Data Analysis**: Employs Pandas for data manipulation and analysis, facilitating easy exploration and manipulation of extracted data.
+
+## Installation
+
+1. Clone the repository:
+
+    ```bash
+    git clone https://github.com/KalimMulani/Data-Extraction-and-NLP.git
+    ```
+
+## Usage
+
+1. **Web Scraping**:
+    - Modify the `scraper.py` file to specify the URLs you want to scrape and the data you want to extract.
+    - Run the `scraper.py` file to extract data from the specified URLs.
+  
+2. **NLP**:
+    - Use NLTK functions in your Python scripts to perform various NLP tasks on the extracted data.
+  
+3. **Data Analysis**:
+    - Utilize Pandas to load, clean, and analyze the extracted data.
+  
+## Example
+
+```python
+from bs4 import BeautifulSoup
+import requests
+import nltk
+import pandas as pd
+
+# Web scraping
+url = 'https://example.com'
+response = requests.get(url)
+soup = BeautifulSoup(response.text, 'html.parser')
+# Extract desired data using Beautiful Soup
+
+# NLP
+text = "Sample text for NLP analysis."
+tokens = nltk.word_tokenize(text)
+# Perform NLP tasks like tokenization, stemming, etc.
+
+# Data Analysis
+data = {'Column1': [1, 2, 3], 'Column2': ['A', 'B', 'C']}
+df = pd.DataFrame(data)
+# Perform data analysis using Pandas
+License
+This project is licensed under the MIT License.
+
+
+
+
+
