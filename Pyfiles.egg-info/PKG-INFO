@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: Pyfiles
+Version: 0.1
+Summary: A package to handle all py files.
+Author: Kalim Mulani
+Author-email: kalimmulani8@gmail.com
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: bs4
+Requires-Dist: urlopen
+Requires-Dist: requests
+Requires-Dist: nltk
